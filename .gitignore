@@ -1,0 +1,13 @@
+# 数据和模型产物（太大，不上传）
+artifacts/
+Assignment2_mimic dataset/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
