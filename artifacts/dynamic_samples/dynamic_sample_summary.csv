@@ -1,0 +1,16 @@
+fold,split,n_samples
+0,train,78193
+0,val,19750
+0,test,24068
+1,train,78115
+1,val,19623
+1,test,24273
+2,train,77796
+2,val,19726
+2,test,24489
+3,train,78415
+3,val,19616
+3,test,23980
+4,train,77151
+4,val,19659
+4,test,25201
