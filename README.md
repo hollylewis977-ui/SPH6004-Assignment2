@@ -61,7 +61,10 @@ The model consists of three modality-specific encoders, pairwise cross-attention
 
 Discrete-time survival negative log-likelihood (NLL) with right-censoring support and subject-level inverse-frequency sample weighting:
 
-$$\mathcal{L} = -\frac{1}{N}\sum_{i=1}^{N} w_i \cdot \begin{cases} \log S_i(b_{k_i}) + \log h_i(k_i), & \text{if uncensored} \\ \log S_i(b_{k_i+1}), & \text{if censored} \end{cases}$$
+- **Uncensored** (alive discharge): $\mathcal{L}_i = -w_i \left[\log S_i(b_{k_i}) + \log h_i(k_i)\right]$
+- **Censored** (ICU death): $\mathcal{L}_i = -w_i \log S_i(b_{k_i+1})$
+
+where $S_i$ is the predicted survival function, $h_i(k_i)$ is the hazard at the event bin, and $w_i$ is a normalized subject-level inverse-frequency weight ensuring equal per-subject contribution.
 
 ### Training Configuration
 
