@@ -1,6 +1,13 @@
-# 数据和模型产物（太大，不上传）
-artifacts/
-Assignment2_mimic dataset/
+# 模型权重和中间产物（太大）
+artifacts/cohort/
+artifacts/dynamic_samples/
+artifacts/features/
+artifacts/models/
+artifacts/results/
+
+# 原始数据中超过 GitHub 100MB 限制的文件
+Assignment2_mimic dataset/data/MIMIC-IV-text*.csv
+Assignment2_mimic dataset/data/MIMIC-IV-time_series*.csv
 
 # Python 缓存
 __pycache__/
